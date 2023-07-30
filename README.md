@@ -5,8 +5,9 @@
 ## Features
 
 1. **String Hashing**: Hash a given string using either the SHA-256 or MD5 algorithm.
-2. **File Hashing**: Hash a file content using either the SHA-256 or MD5 algorithm.
-3. **Hash Comparison**: Compare two hash strings to check if they are equal.
+2. **Salted Hashing**: Hash a string using salt and iterations with either the SHA-256 or MD5 algorithm. Useful for securely storing passwords.
+3. **File Hashing**: Hash a file content using either the SHA-256 or MD5 algorithm.
+4. **Hash Comparison**: Compare two hash strings to check if they are equal.
 
 ## Methods
 
@@ -17,6 +18,8 @@ Hashes a given string using the specified algorithm. If no algorithm is provided
 - **Parameters**:
   - `input`: The input string to hash.
   - `algorithm`: The hashing algorithm to use. Supported values are `"sha256"` and `"md5"` (optional, default `"sha256"`).
+  - `saltLength`: Length of the salt in bytes (optional, default 16).
+  - `iterations`: Number of iterations (optional, default 1000).
 
 ### `fileHash(path, algorithm)`
 
