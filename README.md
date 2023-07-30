@@ -36,7 +36,7 @@ Compares two hash strings for equality.
 
 ## Example Usage
 
-\`\`\`javascript
+```javascript
 const HashUtility = require("./path/to/HashUtility");
 
 const hash1 = HashUtility.stringHash("Hello World", "md5");
@@ -45,7 +45,7 @@ const hash2 = HashUtility.fileHash("/path/to/file.txt");
 const areEqual = HashUtility.compareHash(hash1, hash2);
 
 console.log(areEqual ? "Hashes are equal" : "Hashes are not equal");
-\`\`\`
+```
 
 ## Error Handling
 
